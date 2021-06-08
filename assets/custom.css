@@ -1,0 +1,77 @@
+
+/*********************
+     TYPOGRAPHY
+**********************/
+@font-face {
+    font-family: 'Futura LT Pro Medium';
+    src: url('FuturaLTPro-Medium.eot');
+    src: url('FuturaLTPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLTPro-Medium.woff2') format('woff2'),
+        url('FuturaLTPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT Pro Regular';
+    src: url('FuturaLTPro-Book.eot');
+    src: url('FuturaLTPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLTPro-Book.woff2') format('woff2'),
+        url('FuturaLTPro-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT Pro Light';
+    src: url('FuturaLTPro-Light.eot');
+    src: url('FuturaLTPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLTPro-Light.woff2') format('woff2'),
+        url('FuturaLTPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+h2.slideshow__heading.type-heading-display {
+	font-family: 'Futura LT Pro Regular' 
+}
+ 
+.header--alignment-left .header__nav .nav--depth-1 {
+	text-transform: uppercase;
+    font-family: 'Futura LT Pro Regular' 
+}  
+
+
+@media(min-width: 1000px) {
+
+  .product__media {
+  	display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+  }
+
+}
+
+.product-item__swatches {
+  position: relative;
+  top: 18px;
+  background: white;
+}
+
+.shopify-payment-button__button--unbranded {
+	color: #fff !important;
+}
+
+div.product__header h1.product__title {
+	font-size: 1em !important;
+  	font-family: 'Futura LT Pro Medium';
+}
+
+.product-form__option-label.label-above {
+	color: #111;
+}
