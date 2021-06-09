@@ -1,7 +1,3 @@
-
-/*********************
-     TYPOGRAPHY
-**********************/
 @font-face {
     font-family: 'Futura LT Pro Medium';
     src: url('FuturaLTPro-Medium.eot');
@@ -35,43 +31,86 @@
     font-display: swap;
 }
 
+.slideshow__slide--3_2 .slideshow__image .image__img,
+.slideshow__slide--full_height .slideshow__image .image__img {
+    object-position: top center;
+}
+
 
 
 h2.slideshow__heading.type-heading-display {
-	font-family: 'Futura LT Pro Regular' 
+    font-family: 'Futura LT Pro Regular'
 }
- 
+
 .header--alignment-left .header__nav .nav--depth-1 {
-	text-transform: uppercase;
-    font-family: 'Futura LT Pro Regular' 
-}  
+    text-transform: uppercase;
+    font-family: 'Futura LT Pro Regular'
+}
 
 
 @media(min-width: 1000px) {
 
-  .product__media {
-  	display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 10px;
-  }
+    .product__media {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+    }
 
 }
 
 .product-item__swatches {
-  position: relative;
-  top: 18px;
-  background: white;
+    position: relative;
+    top: 18px;
+    background: white;
+}
+
+.product-form__chip {
+    margin-right: 4px;
+}
+
+.product-item .badge {
+    padding: 6px 7px;
 }
 
 .shopify-payment-button__button--unbranded {
-	color: #fff !important;
+    color: #fff !important;
 }
 
 div.product__header h1.product__title {
-	font-size: 1em !important;
-  	font-family: 'Futura LT Pro Medium';
+    font-size: 1.3em !important;
+    text-transform: capitalize;
+    font-family: 'Futura LT Pro Medium';
 }
 
 .product-form__option-label.label-above {
-	color: #111;
+    color: #919191;
 }
+
+
+.product-form__chip:hover .product-form__chip-label {
+    background: #DDE0E2;
+}
+
+
+/* .backorder-available {
+   background-image:url("https://cdn.shopify.com/s/files/1/1088/7932/files/sold.png?v=1606254999");
+   object-fit: cover;
+ } */
+
+.sold-out {
+    background-image: url(https://cdn.shopify.com/s/files/1/1088/7932/files/sold.png?v=1606254999);
+    object-fit: cover;
+    color: #919394;
+    padding-top: 4px;
+
+}
+
+
+/* .codacity-waitlist-notification {
+  	font-style: italic;
+ 	text-align: center;
+    font-size: 16px;
+	margin-top: 10px;
+  	margin-bottom: 10px;
+}
+ */

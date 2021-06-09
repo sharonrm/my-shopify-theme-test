@@ -102,7 +102,9 @@
                   aria-labelledby="option[{{ optionId }}]"
                   {% if option.selected_value == value %}checked{% endif %}
                 />
-                <span id="option[{{ optionId }}]"class="product-form__chip-label" >
+                <span id="option[{{ optionId }}]"class="product-form__chip-label {% for variant in product.variants %}
+       				{% if variant.option2 == value and variant.available == false %}
+        			sold-out {% endif %}{% endfor %}" >
                   {{ value }} 
                 </span>
               </div>
